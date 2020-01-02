@@ -121,8 +121,8 @@ def train(model,
             if checkpoints_path is not None:
                 model.save_weights(checkpoints_path + "." + str(ep))
                 print("saved ", checkpoints_path + ".model." + str(ep))
+                print("asjad")
             print("Finished Epoch", ep)
-            return history
     else:
         for ep in range(epochs):
             print("Starting Epoch ", ep)
@@ -132,5 +132,6 @@ def train(model,
             if checkpoints_path is not None:
                 model.save_weights(checkpoints_path + "." + str(ep))
                 print("saved ", checkpoints_path + ".model." + str(ep))
+                print("asjad")
             print("Finished Epoch", ep)
-            return history
+    return history
